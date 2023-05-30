@@ -34,7 +34,7 @@ class Node:
     @next_node.setter
     def next_node(self, value):
         if not isinstance(value, Node) and value is not None:
-            raise TypeError("position must be a tuple of 2 positive integers")
+            raise TypeError("next_node must be a Node object")
         self.__next_node = value
 
 
@@ -64,7 +64,7 @@ class SinglyLinkedList:
         else:
             tmp = self.__head
             while (tmp.next_node is not None and
-                    tmp.next_node.data < value):
+                  tmp.next_node.data < value):
                 tmp = tmp.next_node
             new.next_node = tmp.next_node
             tmp.next_node = new
