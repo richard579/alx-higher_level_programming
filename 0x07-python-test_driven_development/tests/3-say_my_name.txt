@@ -28,12 +28,12 @@ an empty string is printed instead.
 ::
 
     >>> say_my_name("Brennan")
-    My name is Brennan
+    My name is Brennan 
 
 Invalid Names
 =============
 
-The parameters ``first_name`` and ``last_name`` must be strings. Otherwise,
+The parameters ``first_name`` and ``last_name``` must be strings. Otherwise,
 a TypeError is raised.
 
 ::
@@ -44,13 +44,13 @@ a TypeError is raised.
 
 ::
 
-    >>> say_my_name("LeBron", ["Cavs", "Lakers, "Heat"])
+    >>> say_my_name("LeBron", ["Cavs", "Lakers", "Heat"])
     Traceback (most recent call last):
     TypeError: last_name must be a string
 
 ::
 
-    >>> say_my_name({"Lebron": 6, "James": 23}, 7.7)
+    >>> say_my_name({"LeBron": 6, "James": 23}, 7.7)
     Traceback (most recent call last):
     TypeError: first_name must be a string
 
@@ -66,4 +66,4 @@ At least one name must be provided.
 
     >>> say_my_name()
     Traceback (most recent call last):
-    TypeError: say_my_name() missing 1 required positional
+    TypeError: say_my_name() missing 1 required positional argument: 'first_name'
