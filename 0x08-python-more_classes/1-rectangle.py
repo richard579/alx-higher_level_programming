@@ -6,7 +6,7 @@ class Rectangle:
     """
     Class that defines properties of rectangle.
 
-    Args:
+    Attributes:
         width (int): width of the rectangle.
         height (int): height of the rectangle.
     """
@@ -39,7 +39,7 @@ class Rectangle:
         return self.__width
 
      @width.setter
-    def width(self, value):
+     def width(self, value):
         """Property setter for width of rectangle.
 
         Args:
@@ -57,7 +57,7 @@ class Rectangle:
             self.__width = value
 
      @height.setter
-    def height(self, value):
+     def height(self, value):
         """Property setter for height of rectangle.
 
         Args:
