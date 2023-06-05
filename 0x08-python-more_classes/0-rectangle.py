@@ -1,9 +1,8 @@
 #!/usr/bin/python3
-"""0-rectangle, built for 0x08 project.
+""" empty class Rectangle that defines a rectangle
 """
 
 
 class Rectangle:
-    """Empty class per task instructions.
-    """
+    """ class rectangle"""
     pass
