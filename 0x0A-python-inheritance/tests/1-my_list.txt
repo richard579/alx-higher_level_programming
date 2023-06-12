@@ -12,6 +12,12 @@ assumes all given values are of type int
     >>> my_list.print_sorted()
     [1, 2, 3, 4, 5]
 
+    empty list
+
+    >>> my_list = MyList([])
+    >>> my_list.print_sorted()
+    []
+
     list with one element
 
     >>> my_list = MyList([9])
