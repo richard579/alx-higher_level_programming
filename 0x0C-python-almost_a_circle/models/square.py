@@ -1,8 +1,10 @@
 #!/usr/bin/python3
 """Defines a class Square"""
 
+
 from inspect import classify_class_attrs
 from models.rectangle import Rectangle
+
 
 class Square(Rectangle):
     """Class that defines property of Square
