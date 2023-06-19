@@ -41,7 +41,7 @@ class TestBaseMethods(unittest.TestCase):
         """ Tests if docstring is present """
         self.assertIsNotNone(Base.__doc__)
 
-     def test_consecutive_ids(self):
+    def test_consecutive_ids(self):
         """ Test consecutive ids """
         b1 = Base()
         b2 = Base()
@@ -108,7 +108,7 @@ class TestBaseMethods(unittest.TestCase):
         self.assertEqual(list_output, list_output2)
         self.assertTrue(type(list_output), list)
 
-     def test_save_to_file_1(self):
+    def test_save_to_file_1(self):
         """ Test save_to_file_method with empty_file """
         Rectangle.save_to_file([])
         with open("Rectangle.json", mode="r") as myFile:

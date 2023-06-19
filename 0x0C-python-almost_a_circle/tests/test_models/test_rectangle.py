@@ -138,7 +138,7 @@ class TestRectangleMethods(unittest.TestCase):
             r1.display()
             self.assertEqual(str_out.getvalue(), result)
 
-     def test_basic_display_2(self):
+    def test_basic_display_2(self):
         """ Test string printed """
         r1 = Rectangle(5, 4, 1, 1)
         result = "\n #####\n #####\n #####\n #####\n"

@@ -5,6 +5,7 @@ import os.path
 import csv
 import turtle
 
+
 class Base:
     """Class that defines properties of Base.
 
@@ -183,14 +184,9 @@ class Base:
 
         @staticmethod
         def draw(list_rectangles, list_squares):
-        """ Opens a window and draws all Rectangles and Squares
-
-        NOT COMPLETE!!!!!
-
-        """
-        window = turtle.Screen()
-        turtle.speed(5)
-        turtle.pensize(5)
+            window = turtle.Screen()
+            turtle.speed(5)
+            turtle.pensize(5)
         for rectangle in list_rectangles:
             turtle.penup()
             turtle.goto(rectangle.x, rectangle.y)

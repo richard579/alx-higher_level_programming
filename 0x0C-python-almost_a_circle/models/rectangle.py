@@ -154,7 +154,7 @@ class Rectangle(Base):
         if self.__y > 0:
             for i in range(self.__y):
                 print()
-            self.__y = 0:
+            self.__y = 0
         for i in range(self.__height):
             for j in range(self.__width):
                 if self.__y == j:
@@ -172,7 +172,7 @@ class Rectangle(Base):
 
         # print("args {}".format(type(args)))
         # print("kwargs {}".format(type(kwargs)))
-        if args is not None and len(args) is not 0:
+        if args != None and len(args) is not 0:
             list_atrr = ['id', 'width', 'height', 'x', 'y']
             for i in range(len(args)):
                 setattr(self, list_atrr[i], args[i])

@@ -9,6 +9,7 @@ def run_command(cmd):
     output, error = process.communicate()
     return "{}{}".format(output, error)
 
+
 def run_unittest():
     nb_tests = 0
     is_success = False
